@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <title>Bakı Hava Durumu</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(to right, #4facfe, #0dc049);
+            color: rgb(255, 238, 3);
+            text-align: center;
+            padding: 50px;
+        }
+        .card {
+            background: rgba(0,0,0,0.3);
+            padding: 20px;
+            margin: 15px;
+            border-radius: 15px;
+            display: inline-block;
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bakı Hava Proqnozu</h1>
+    <h2>Gence hava Praqnosu</h2>
+    <h3>Sumaqiyit Hava Praqnosu</h3>
+    <h4>1 hefte</h4>
+
+    <div class="card">
+        <h2>1-ci gün baki</h2>
+        <p>🌡️ 17°C</p>
+        <p>🌙 Gecə: 12°C</p>
+    </div>
+
+    <div class="card">
+        <h2>2-ci gün Baki </h2>
+        <p>🌡️ 20°C</p>
+        <p>🌙 Gecə: 9°C</p>
+    </div>
+
+    <div class="card">
+        <h2>3-cü gün baki</h2>
+        <p>🌡️ 18°C</p>
+        <p>🌙 Gecə: 11°C</p>
+    </div>
+
+    <div class="card">
+      <h2>4- gun baki</h2>
+      <p>🌡️ 21°C</p>
+        <p>🌙 Gecə: 11°C</p>
+    </div>
+
+    <div class="card">
+      <h2>5- gun baki</h2>
+      <p>🌡️ 18°C</p>
+        <p>🌙 Gecə: 8°C</p>
+    </div>
+
+    
+    <div class="card">
+      <h2>6- gun baki</h2>
+      <p>🌡️ 19°C</p>
+        <p>🌙 Gecə: 7°C</p>
+    </div>
+
+    
+    <div class="card">
+      <h2>Bazar- gun baki</h2>
+      <p>🌡️ 17°C</p>
+        <p>🌙 Gecə: 10°C</p>
+    </div> 
+
+    <button onclick="mesajGoster()">Düymə</button>
+
+    <script>
+function mesajGoster() {
+    alert("Salam Bakı havası yaxşıdı!");
+}
+</script>
+
+<button onclick="rengiDeyis()">Rəngi dəyiş</button>
+
+<script>
+function rengiDeyis() {
+    let kartlar = document.querySelectorAll(".card");
+    kartlar.forEach(k => {
+        k.style.background = "rgba(255,255,255,0.6)";
+    });
+}
+</script>
+<div class="card">
+        <h2>1-ci gün Gence</h2>
+        <p>🌡️ 19°C</p>
+        <p>🌙 Gecə: 10°C</p>
+    </div>
+
+    <div class="card">
+        <h2>2-ci gün Gence </h2>
+        <p>🌡️ 20°C</p>
+        <p>🌙 Gecə: 9°C</p>
+    </div>
+
+    <div class="card">
+        <h2>3-cü gün Gence</h2>
+        <p>🌡️ 18°C</p>
+        <p>🌙 Gecə: 11°C</p>
+    </div>
+
+    <div class="card">
+      <h2>4- gun Gence</h2>
+      <p>🌡️ 23°C</p>
+        <p>🌙 Gecə: 18°C</p>
+    </div>
+
+    <div class="card">
+      <h2>5- gun Gence</h2>
+      <p>🌡️ 18°C</p>
+        <p>🌙 Gecə: 8°C</p>
+    </div>
+
+    
+    <div class="card">
+      <h2>6- gun Gence</h2>
+      <p>🌡️ 22°C</p>
+        <p>🌙 Gecə: 9°C</p>
+    </div>
+
+    
+    <div class="card">
+      <h2>Bazar- gun Gence</h2>
+      <p>🌡️ 23°C</p>
+        <p>🌙 Gecə: 7°C</p>
+    </div> 
+
+</body>
+</html>
